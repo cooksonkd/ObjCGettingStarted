@@ -13,6 +13,12 @@
 		26DA0C9922F2DA5F00C066BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DA0C9822F2DA5F00C066BC /* Assets.xcassets */; };
 		26DA0C9C22F2DA5F00C066BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DA0C9A22F2DA5F00C066BC /* LaunchScreen.storyboard */; };
 		26DA0C9F22F2DA5F00C066BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0C9E22F2DA5F00C066BC /* main.m */; };
+		26DA0CB022F2E6C100C066BC /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CAF22F2E6C100C066BC /* Book.m */; };
+		26DA0CB322F2E87700C066BC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CB222F2E87700C066BC /* Person.m */; };
+		26DA0CB722F30FEA00C066BC /* RPSTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CB622F30FEA00C066BC /* RPSTurn.m */; };
+		26DA0CBA22F313A400C066BC /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CB922F313A400C066BC /* RPSGame.m */; };
+		26DA0CBE22F31F5900C066BC /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CBD22F31F5900C066BC /* Article.m */; };
+		26DA0CC522F3216800C066BC /* TopHeadlinesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CC422F3216800C066BC /* TopHeadlinesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		26DA0C9B22F2DA5F00C066BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26DA0C9D22F2DA5F00C066BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26DA0C9E22F2DA5F00C066BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26DA0CAE22F2E6C100C066BC /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		26DA0CAF22F2E6C100C066BC /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		26DA0CB122F2E87700C066BC /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		26DA0CB222F2E87700C066BC /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		26DA0CB522F30FEA00C066BC /* RPSTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSTurn.h; sourceTree = "<group>"; };
+		26DA0CB622F30FEA00C066BC /* RPSTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSTurn.m; sourceTree = "<group>"; };
+		26DA0CB822F313A400C066BC /* RPSGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPSGame.h; sourceTree = "<group>"; };
+		26DA0CB922F313A400C066BC /* RPSGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPSGame.m; sourceTree = "<group>"; };
+		26DA0CBC22F31F5900C066BC /* Article.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		26DA0CBD22F31F5900C066BC /* Article.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		26DA0CC322F3216800C066BC /* TopHeadlinesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopHeadlinesTableViewController.h; sourceTree = "<group>"; };
+		26DA0CC422F3216800C066BC /* TopHeadlinesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopHeadlinesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,9 @@
 		26DA0C8E22F2DA4F00C066BC /* ObjCGettingStarted */ = {
 			isa = PBXGroup;
 			children = (
+				26DA0CC222F3216800C066BC /* Controller */,
+				26DA0CBB22F31F2700C066BC /* Model */,
+				26DA0CB422F30EB100C066BC /* Udacity Files */,
 				26DA0C8F22F2DA4F00C066BC /* AppDelegate.h */,
 				26DA0C9022F2DA4F00C066BC /* AppDelegate.m */,
 				26DA0C9222F2DA4F00C066BC /* ViewController.h */,
@@ -69,6 +90,39 @@
 				26DA0C9E22F2DA5F00C066BC /* main.m */,
 			);
 			path = ObjCGettingStarted;
+			sourceTree = "<group>";
+		};
+		26DA0CB422F30EB100C066BC /* Udacity Files */ = {
+			isa = PBXGroup;
+			children = (
+				26DA0CAE22F2E6C100C066BC /* Book.h */,
+				26DA0CAF22F2E6C100C066BC /* Book.m */,
+				26DA0CB122F2E87700C066BC /* Person.h */,
+				26DA0CB222F2E87700C066BC /* Person.m */,
+				26DA0CB522F30FEA00C066BC /* RPSTurn.h */,
+				26DA0CB622F30FEA00C066BC /* RPSTurn.m */,
+				26DA0CB822F313A400C066BC /* RPSGame.h */,
+				26DA0CB922F313A400C066BC /* RPSGame.m */,
+			);
+			path = "Udacity Files";
+			sourceTree = "<group>";
+		};
+		26DA0CBB22F31F2700C066BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26DA0CBC22F31F5900C066BC /* Article.h */,
+				26DA0CBD22F31F5900C066BC /* Article.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26DA0CC222F3216800C066BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26DA0CC322F3216800C066BC /* TopHeadlinesTableViewController.h */,
+				26DA0CC422F3216800C066BC /* TopHeadlinesTableViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DA0CBE22F31F5900C066BC /* Article.m in Sources */,
+				26DA0CB022F2E6C100C066BC /* Book.m in Sources */,
+				26DA0CBA22F313A400C066BC /* RPSGame.m in Sources */,
+				26DA0CC522F3216800C066BC /* TopHeadlinesTableViewController.m in Sources */,
 				26DA0C9422F2DA4F00C066BC /* ViewController.m in Sources */,
+				26DA0CB722F30FEA00C066BC /* RPSTurn.m in Sources */,
+				26DA0CB322F2E87700C066BC /* Person.m in Sources */,
 				26DA0C9F22F2DA5F00C066BC /* main.m in Sources */,
 				26DA0C9122F2DA4F00C066BC /* AppDelegate.m in Sources */,
 			);
