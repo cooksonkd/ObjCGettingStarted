@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Article.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TopHeadlinesTableViewController : UITableViewController
+@protocol TopHeadlinesTableViewControllerDelegate <NSObject>
 
+- (void)configureWithArticle:(Article *)article;
+
+@end
+
+@interface TopHeadlinesTableViewController : UITableViewController
+@property (weak, nonatomic) id <TopHeadlinesTableViewControllerDelegate> delegate;
 @end
 
 NS_ASSUME_NONNULL_END

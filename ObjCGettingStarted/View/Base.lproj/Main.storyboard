@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1UG-VD-tGo">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Headlines Table View Controller-->
+        <scene sceneID="PHR-4L-zKI">
+            <objects>
+                <tableViewController id="Xma-Gc-RoI" customClass="TopHeadlinesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MPh-3v-0Sv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="kDN-wY-RGa">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kDN-wY-RGa" id="ZLC-a6-u1N">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="164-9m-sn2" kind="show" identifier="articleSegue" id="xq8-ik-RKv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xma-Gc-RoI" id="U85-1t-cAW"/>
+                            <outlet property="delegate" destination="Xma-Gc-RoI" id="3Is-KP-IJ9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Gpe-Xu-nrc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9P-gj-RoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457.9710144927537" y="417.85714285714283"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="mG3-0b-OUZ">
+            <objects>
+                <viewController id="164-9m-sn2" customClass="ArticleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fur-Uo-hFg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FMIA: In Remembrance of Don Banks, an NFL Conscience and a True Friend - NBCSports.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CET-zA-y5q" userLabel="titleLabel">
+                                <rect key="frame" x="16" y="104" width="382" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter King" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ign-4V-Vqg" userLabel="authorLabel">
+                                <rect key="frame" x="16" y="180" width="382" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="3jO-fW-nx0">
+                                <rect key="frame" x="16" y="207.5" width="382" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="vZh-OL-jbZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1f-1U-Ww1" userLabel="descriptionLabel">
+                                <rect key="frame" x="16" y="373.5" width="382" height="122"/>
+                                <string key="text">The training camp tour rolled on, with stops in Jacksonville, Tampa, Indy and other spots. But Peter King leads his Football Morning in America column with the sudden passing of his good friend Don Banks, a beloved NFL writer whose death in Canton has crushed…</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.22" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CET-zA-y5q" firstAttribute="top" secondItem="qXQ-Jl-lZh" secondAttribute="top" constant="16" id="178-YU-mqk"/>
+                            <constraint firstItem="qXQ-Jl-lZh" firstAttribute="trailing" secondItem="W1f-1U-Ww1" secondAttribute="trailing" constant="16" id="Cti-pN-HIM"/>
+                            <constraint firstItem="qXQ-Jl-lZh" firstAttribute="trailing" secondItem="CET-zA-y5q" secondAttribute="trailing" constant="16" id="FUa-Nl-wXI"/>
+                            <constraint firstItem="ign-4V-Vqg" firstAttribute="leading" secondItem="qXQ-Jl-lZh" secondAttribute="leading" constant="16" id="IPm-rn-FsR"/>
+                            <constraint firstItem="qXQ-Jl-lZh" firstAttribute="trailing" secondItem="ign-4V-Vqg" secondAttribute="trailing" constant="16" id="J91-O2-pDQ"/>
+                            <constraint firstItem="3jO-fW-nx0" firstAttribute="top" secondItem="ign-4V-Vqg" secondAttribute="bottom" constant="8" id="Vkq-A3-8G6"/>
+                            <constraint firstItem="qXQ-Jl-lZh" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="W1f-1U-Ww1" secondAttribute="bottom" constant="16" id="Xho-Nz-S2h"/>
+                            <constraint firstItem="qXQ-Jl-lZh" firstAttribute="trailing" secondItem="3jO-fW-nx0" secondAttribute="trailing" constant="16" id="cej-Gp-1eH"/>
+                            <constraint firstItem="W1f-1U-Ww1" firstAttribute="top" secondItem="3jO-fW-nx0" secondAttribute="bottom" constant="16" id="hkN-u4-rYz"/>
+                            <constraint firstItem="ign-4V-Vqg" firstAttribute="top" secondItem="CET-zA-y5q" secondAttribute="bottom" constant="4" id="nlA-JV-VJJ"/>
+                            <constraint firstItem="CET-zA-y5q" firstAttribute="leading" secondItem="qXQ-Jl-lZh" secondAttribute="leading" constant="16" id="oyO-AP-WyV"/>
+                            <constraint firstItem="3jO-fW-nx0" firstAttribute="leading" secondItem="qXQ-Jl-lZh" secondAttribute="leading" constant="16" id="r77-0i-BKR"/>
+                            <constraint firstItem="W1f-1U-Ww1" firstAttribute="leading" secondItem="qXQ-Jl-lZh" secondAttribute="leading" constant="16" id="xRV-x3-3U6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qXQ-Jl-lZh"/>
+                    </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="ign-4V-Vqg" id="Ki1-On-QZ6"/>
+                        <outlet property="descriptionLabel" destination="W1f-1U-Ww1" id="BQQ-7N-XZB"/>
+                        <outlet property="titleLabel" destination="CET-zA-y5q" id="6tR-qq-EdT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQi-pw-3Q6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2374" y="418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qo0-WM-KsH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1UG-VD-tGo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="48J-tY-gi5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xma-Gc-RoI" kind="relationship" relationship="rootViewController" id="ex2-Go-KSQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kt5-hz-cRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547.82608695652175" y="417.85714285714283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="1040" height="584"/>
+    </resources>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+</document>

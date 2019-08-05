@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopHeadlinesTableViewCell" rowHeight="174" id="KGk-i7-Jjw" customClass="TopHeadlinesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="icons8-news-50" translatesAutoresizingMaskIntoConstraints="NO" id="ewz-Va-0q9" userLabel="imageView">
+                        <rect key="frame" x="16" y="16" width="50" height="137.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="loh-TS-zx3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="FMIA: In Remembrance of Don Banks, an NFL Conscience and a True Friend - NBCSports.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMz-mO-N5h" userLabel="titleLabel">
+                        <rect key="frame" x="82" y="16" width="222" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Peter King" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrj-hW-lLM" userLabel="authorLabel">
+                        <rect key="frame" x="82" y="74" width="222" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB8-pi-y9P" userLabel="descriptionLabel">
+                        <rect key="frame" x="82" y="100" width="206" height="17"/>
+                        <string key="text">The training camp tour rolled on, with stops in Jacksonville, Tampa, Indy and other spots. But Peter King leads his Football Morning in America column with the sudden passing of his good friend Don Banks, a beloved NFL writer whose death in Canton has crushed…</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WB8-pi-y9P" firstAttribute="top" secondItem="xrj-hW-lLM" secondAttribute="bottom" constant="8" id="073-gL-fPu"/>
+                    <constraint firstItem="uMz-mO-N5h" firstAttribute="top" secondItem="ewz-Va-0q9" secondAttribute="top" id="17K-zF-21J"/>
+                    <constraint firstItem="ewz-Va-0q9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2gI-LT-Nfg"/>
+                    <constraint firstItem="xrj-hW-lLM" firstAttribute="leading" secondItem="uMz-mO-N5h" secondAttribute="leading" id="3kb-4m-yY4"/>
+                    <constraint firstAttribute="bottom" secondItem="ewz-Va-0q9" secondAttribute="bottom" constant="16" id="9vV-Tp-RK1"/>
+                    <constraint firstAttribute="trailing" secondItem="xrj-hW-lLM" secondAttribute="trailing" constant="16" id="OBf-kC-8zP"/>
+                    <constraint firstItem="ewz-Va-0q9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="WOB-2r-EkD"/>
+                    <constraint firstAttribute="trailing" secondItem="uMz-mO-N5h" secondAttribute="trailing" constant="16" id="cOH-xo-uJZ"/>
+                    <constraint firstItem="uMz-mO-N5h" firstAttribute="leading" secondItem="ewz-Va-0q9" secondAttribute="trailing" constant="16" id="fsd-aS-5kd"/>
+                    <constraint firstItem="WB8-pi-y9P" firstAttribute="leading" secondItem="uMz-mO-N5h" secondAttribute="leading" id="goL-kx-1oq"/>
+                    <constraint firstItem="xrj-hW-lLM" firstAttribute="top" secondItem="uMz-mO-N5h" secondAttribute="bottom" constant="4" id="l6h-LC-G86"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WB8-pi-y9P" secondAttribute="trailing" constant="16" id="mjy-yc-3tf"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WB8-pi-y9P" secondAttribute="bottom" constant="16" id="u1u-tk-q9K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="authorLabel" destination="xrj-hW-lLM" id="K66-94-ERS"/>
+                <outlet property="descriptionLabel" destination="WB8-pi-y9P" id="C9x-NH-4s9"/>
+                <outlet property="imageView" destination="ewz-Va-0q9" id="5rQ-SO-gL1"/>
+                <outlet property="titleLabel" destination="uMz-mO-N5h" id="j5M-e0-LMU"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="184.15178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icons8-news-50" width="50" height="50"/>
+    </resources>
+</document>

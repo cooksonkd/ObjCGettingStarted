@@ -7,39 +7,48 @@
 //
 
 #import "TopHeadlinesTableViewController.h"
+#import "DataRepository.h"
+#import "TopHeadlinesTableViewCell.h"
+#import "ArticleViewController.h"
 
 @interface TopHeadlinesTableViewController ()
-
+@property (nonatomic, strong) NSMutableArray *articleArray;
+@property (nonatomic, strong) DataRepository *dataRepository;
 @end
 
 @implementation TopHeadlinesTableViewController
 
-NSString *cellId = @"cellId";
-#warning Change value of cellId to the id of the cell in the storyboard
+@synthesize delegate;
+NSString *cellId = @"TopHeadlinesTableViewCell";
+NSString *segueId = @"articleSegue";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.tableView registerNib:[UINib nibWithNibName:cellId bundle:nil] forCellReuseIdentifier:cellId];
+    self.dataRepository = [[DataRepository alloc] init];
+    self.articleArray = self.dataRepository.articleArray;
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.articleArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
-#warning Incomplete implementation, return the cell for the row at the index path
+    TopHeadlinesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     // Configure the cell...
-    
+    Article *article = [self.articleArray objectAtIndex:indexPath.row];
+    [cell configureWithArticle:article];
     return cell;
+}
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Article *article = [self.articleArray objectAtIndex:indexPath.row];
+    [self.delegate configureWithArticle:article];
+    [self performSegueWithIdentifier:segueId sender:self];
 }
 
 /*
@@ -49,7 +58,13 @@ NSString *cellId = @"cellId";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:segueId]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        ArticleViewController *articleViewController = segue.destinationViewController;
+        Article *article = [self.articleArray objectAtIndex:indexPath.row];
+        [articleViewController configureWithArticle:article];
+    }
 }
-*/
+ */
 
 @end

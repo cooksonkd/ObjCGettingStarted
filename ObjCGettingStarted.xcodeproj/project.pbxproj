@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		26DA0C9122F2DA4F00C066BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0C9022F2DA4F00C066BC /* AppDelegate.m */; };
-		26DA0C9422F2DA4F00C066BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0C9322F2DA4F00C066BC /* ViewController.m */; };
 		26DA0C9722F2DA5000C066BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DA0C9522F2DA5000C066BC /* Main.storyboard */; };
 		26DA0C9922F2DA5F00C066BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26DA0C9822F2DA5F00C066BC /* Assets.xcassets */; };
 		26DA0C9C22F2DA5F00C066BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26DA0C9A22F2DA5F00C066BC /* LaunchScreen.storyboard */; };
@@ -19,14 +18,18 @@
 		26DA0CBA22F313A400C066BC /* RPSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CB922F313A400C066BC /* RPSGame.m */; };
 		26DA0CBE22F31F5900C066BC /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CBD22F31F5900C066BC /* Article.m */; };
 		26DA0CC522F3216800C066BC /* TopHeadlinesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CC422F3216800C066BC /* TopHeadlinesTableViewController.m */; };
+		26DA0CE622F81EF200C066BC /* DataRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CE522F81EF200C066BC /* DataRepository.m */; };
+		26DA0CEB22F8270E00C066BC /* TopHeadlinesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CE922F8270E00C066BC /* TopHeadlinesTableViewCell.m */; };
+		26DA0CEC22F8270E00C066BC /* TopHeadlinesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26DA0CEA22F8270E00C066BC /* TopHeadlinesTableViewCell.xib */; };
+		26DA0CEF22F8479400C066BC /* TopHeadlines.json in Resources */ = {isa = PBXBuildFile; fileRef = 26DA0CEE22F8479400C066BC /* TopHeadlines.json */; };
+		26DA0CF322F84D0F00C066BC /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CF222F84D0F00C066BC /* JSONParser.m */; };
+		26DA0CF622F8793D00C066BC /* ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DA0CF522F8793D00C066BC /* ArticleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26DA0C8C22F2DA4F00C066BC /* ObjCGettingStarted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCGettingStarted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26DA0C8F22F2DA4F00C066BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26DA0C9022F2DA4F00C066BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		26DA0C9222F2DA4F00C066BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26DA0C9322F2DA4F00C066BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		26DA0C9622F2DA5000C066BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26DA0C9822F2DA5F00C066BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26DA0C9B22F2DA5F00C066BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +47,16 @@
 		26DA0CBD22F31F5900C066BC /* Article.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		26DA0CC322F3216800C066BC /* TopHeadlinesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopHeadlinesTableViewController.h; sourceTree = "<group>"; };
 		26DA0CC422F3216800C066BC /* TopHeadlinesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopHeadlinesTableViewController.m; sourceTree = "<group>"; };
+		26DA0CE422F81EF200C066BC /* DataRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRepository.h; sourceTree = "<group>"; };
+		26DA0CE522F81EF200C066BC /* DataRepository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataRepository.m; sourceTree = "<group>"; };
+		26DA0CE822F8270E00C066BC /* TopHeadlinesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopHeadlinesTableViewCell.h; sourceTree = "<group>"; };
+		26DA0CE922F8270E00C066BC /* TopHeadlinesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopHeadlinesTableViewCell.m; sourceTree = "<group>"; };
+		26DA0CEA22F8270E00C066BC /* TopHeadlinesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopHeadlinesTableViewCell.xib; sourceTree = "<group>"; };
+		26DA0CEE22F8479400C066BC /* TopHeadlines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TopHeadlines.json; sourceTree = "<group>"; };
+		26DA0CF122F84D0E00C066BC /* JSONParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		26DA0CF222F84D0F00C066BC /* JSONParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONParser.m; sourceTree = "<group>"; };
+		26DA0CF422F8793D00C066BC /* ArticleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleViewController.h; sourceTree = "<group>"; };
+		26DA0CF522F8793D00C066BC /* ArticleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,16 +89,12 @@
 		26DA0C8E22F2DA4F00C066BC /* ObjCGettingStarted */ = {
 			isa = PBXGroup;
 			children = (
+				26DA0CF022F847F600C066BC /* Repository */,
+				26DA0CE722F826D400C066BC /* View */,
 				26DA0CC222F3216800C066BC /* Controller */,
 				26DA0CBB22F31F2700C066BC /* Model */,
 				26DA0CB422F30EB100C066BC /* Udacity Files */,
-				26DA0C8F22F2DA4F00C066BC /* AppDelegate.h */,
-				26DA0C9022F2DA4F00C066BC /* AppDelegate.m */,
-				26DA0C9222F2DA4F00C066BC /* ViewController.h */,
-				26DA0C9322F2DA4F00C066BC /* ViewController.m */,
-				26DA0C9522F2DA5000C066BC /* Main.storyboard */,
 				26DA0C9822F2DA5F00C066BC /* Assets.xcassets */,
-				26DA0C9A22F2DA5F00C066BC /* LaunchScreen.storyboard */,
 				26DA0C9D22F2DA5F00C066BC /* Info.plist */,
 				26DA0C9E22F2DA5F00C066BC /* main.m */,
 			);
@@ -119,10 +128,46 @@
 		26DA0CC222F3216800C066BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				26DA0C8F22F2DA4F00C066BC /* AppDelegate.h */,
+				26DA0C9022F2DA4F00C066BC /* AppDelegate.m */,
 				26DA0CC322F3216800C066BC /* TopHeadlinesTableViewController.h */,
 				26DA0CC422F3216800C066BC /* TopHeadlinesTableViewController.m */,
+				26DA0CF422F8793D00C066BC /* ArticleViewController.h */,
+				26DA0CF522F8793D00C066BC /* ArticleViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		26DA0CE722F826D400C066BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26DA0CED22F8271700C066BC /* TableView Cells */,
+				26DA0C9522F2DA5000C066BC /* Main.storyboard */,
+				26DA0C9A22F2DA5F00C066BC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26DA0CED22F8271700C066BC /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				26DA0CE822F8270E00C066BC /* TopHeadlinesTableViewCell.h */,
+				26DA0CE922F8270E00C066BC /* TopHeadlinesTableViewCell.m */,
+				26DA0CEA22F8270E00C066BC /* TopHeadlinesTableViewCell.xib */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		26DA0CF022F847F600C066BC /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				26DA0CE422F81EF200C066BC /* DataRepository.h */,
+				26DA0CE522F81EF200C066BC /* DataRepository.m */,
+				26DA0CEE22F8479400C066BC /* TopHeadlines.json */,
+				26DA0CF122F84D0E00C066BC /* JSONParser.h */,
+				26DA0CF222F84D0F00C066BC /* JSONParser.m */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				26DA0C9C22F2DA5F00C066BC /* LaunchScreen.storyboard in Resources */,
+				26DA0CEC22F8270E00C066BC /* TopHeadlinesTableViewCell.xib in Resources */,
 				26DA0C9922F2DA5F00C066BC /* Assets.xcassets in Resources */,
 				26DA0C9722F2DA5000C066BC /* Main.storyboard in Resources */,
+				26DA0CEF22F8479400C066BC /* TopHeadlines.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				26DA0CBE22F31F5900C066BC /* Article.m in Sources */,
+				26DA0CE622F81EF200C066BC /* DataRepository.m in Sources */,
 				26DA0CB022F2E6C100C066BC /* Book.m in Sources */,
+				26DA0CEB22F8270E00C066BC /* TopHeadlinesTableViewCell.m in Sources */,
 				26DA0CBA22F313A400C066BC /* RPSGame.m in Sources */,
+				26DA0CF622F8793D00C066BC /* ArticleViewController.m in Sources */,
 				26DA0CC522F3216800C066BC /* TopHeadlinesTableViewController.m in Sources */,
-				26DA0C9422F2DA4F00C066BC /* ViewController.m in Sources */,
+				26DA0CF322F84D0F00C066BC /* JSONParser.m in Sources */,
 				26DA0CB722F30FEA00C066BC /* RPSTurn.m in Sources */,
 				26DA0CB322F2E87700C066BC /* Person.m in Sources */,
 				26DA0C9F22F2DA5F00C066BC /* main.m in Sources */,
