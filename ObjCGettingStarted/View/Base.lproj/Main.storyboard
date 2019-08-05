@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top Headlines Table View Controller-->
+        <!--Top Headlines-->
         <scene sceneID="PHR-4L-zKI">
             <objects>
                 <tableViewController id="Xma-Gc-RoI" customClass="TopHeadlinesTableViewController" sceneMemberID="viewController">
@@ -26,9 +26,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="164-9m-sn2" kind="show" identifier="articleSegue" id="xq8-ik-RKv"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,7 +33,10 @@
                             <outlet property="delegate" destination="Xma-Gc-RoI" id="3Is-KP-IJ9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Gpe-Xu-nrc"/>
+                    <navigationItem key="navigationItem" title="Top Headlines" id="Gpe-Xu-nrc"/>
+                    <connections>
+                        <segue destination="164-9m-sn2" kind="show" identifier="articleSegue" id="px6-X5-6lM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9P-gj-RoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

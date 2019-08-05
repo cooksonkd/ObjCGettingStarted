@@ -47,11 +47,10 @@ NSString *segueId = @"articleSegue";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Article *article = [self.articleArray objectAtIndex:indexPath.row];
-    [self.delegate configureWithArticle:article];
+//    [self.delegate configureWithArticle:article];
     [self performSegueWithIdentifier:segueId sender:self];
 }
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -59,12 +58,10 @@ NSString *segueId = @"articleSegue";
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     if ([segue.identifier isEqualToString:segueId]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         ArticleViewController *articleViewController = segue.destinationViewController;
-        Article *article = [self.articleArray objectAtIndex:indexPath.row];
-        [articleViewController configureWithArticle:article];
+        [articleViewController configureWithArticle:[self.articleArray objectAtIndex:indexPath.row]];
     }
 }
- */
 
 @end

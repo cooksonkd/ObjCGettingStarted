@@ -12,12 +12,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ArticleViewController : UIViewController <TopHeadlinesTableViewControllerDelegate>
+@interface ArticleViewController : UIViewController /**<>*/
 - (void)configureWithArticle:(Article *)article;
-
-- (void)setArticleTitle:(NSString *)articleTitle
-          articleAuthor:(NSString *)articleAuthor
-     articleDescription:(NSString *)articleDescription;
 @end
 
 NS_ASSUME_NONNULL_END

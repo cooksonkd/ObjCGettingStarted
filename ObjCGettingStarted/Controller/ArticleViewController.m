@@ -16,20 +16,26 @@
 @property (nonatomic) NSString *articleTitle;
 @property (nonatomic) NSString *articleAuthor;
 @property (nonatomic) NSString *articleDescription;
-@property (nonatomic) TopHeadlinesTableViewController *topHeadlinesTableViewController;
+//@property (nonatomic) TopHeadlinesTableViewController *topHeadlinesTableViewController;
 @end
 
 @implementation ArticleViewController
+@synthesize titleLabel;
+@synthesize authorLabel;
+@synthesize descriptionLabel;
+@synthesize articleTitle;
+@synthesize articleAuthor;
+@synthesize articleDescription;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.topHeadlinesTableViewController = [[TopHeadlinesTableViewController alloc] init];
-    self.topHeadlinesTableViewController.delegate = self;
-    [self setArticleWithTitle:self.articleTitle
-                articleAuthor:self.articleAuthor
-           articleDescription:self.articleDescription];
+//    self.topHeadlinesTableViewController = [[TopHeadlinesTableViewController alloc] init];
+//    self.topHeadlinesTableViewController.delegate = self;
+    self.titleLabel.text = articleTitle;
+    self.authorLabel.text = articleAuthor;
+    self.descriptionLabel.text = articleDescription;
 }
 
 - (void)configureWithArticle:(Article *)article {
@@ -38,12 +44,12 @@
     self.articleDescription = article.articleDescription;
 }
 
-- (void)setArticleWithTitle:(NSString *)articleTitle
-          articleAuthor:(NSString *)articleAuthor
-     articleDescription:(NSString *)articleDescription {
-    self.titleLabel.text = articleTitle;
-    self.authorLabel.text = articleAuthor;
-    self.descriptionLabel.text = articleDescription;
-}
+//- (void)setArticleWithTitle:(NSString *)articleTitle
+//          articleAuthor:(NSString *)articleAuthor
+//     articleDescription:(NSString *)articleDescription {
+//    self.titleLabel.text = articleTitle;
+//    self.authorLabel.text = articleAuthor;
+//    self.descriptionLabel.text = articleDescription;
+//}
 
 @end
